@@ -4,6 +4,8 @@ This project is a template application using Domain-Driven Design (DDD) with C# 
 It implements various design patterns like Repository Pattern, Mediator Pattern, Specification Pattern, and Unit of Work Pattern to promote clean and scalable software architecture. 
 The application also utilizes ASP.NET Core Identity for authentication and authorization, ensuring secure user management.
 
+Feel free to fork it and use it however you desire.
+
 ### Project Structure
 Domain: Contains domain entities, repository interfaces, specifications, and other business logic abstractions.
 Application: Includes application services, DTOs, Mediator handlers, validations with Fluent Validation, and use cases.
