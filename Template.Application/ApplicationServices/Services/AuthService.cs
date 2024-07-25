@@ -67,7 +67,7 @@ namespace Template.Application.Services
                 {
                     var e when e.Equals(UserProfileConstant.Admin.Value) => IdentityRoleConstant.Admin,
                     var e when e.Equals(UserProfileConstant.User.Value) => IdentityRoleConstant.User,
-                    _ => throw new BadRequestException("Perfil inválido.")
+                    _ => throw new BadRequestException("Invalid profile.")
                 };
 
                 await _userManager.AddToRoleAsync(user, identityRole);

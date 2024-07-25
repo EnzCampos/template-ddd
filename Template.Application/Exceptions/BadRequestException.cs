@@ -4,6 +4,10 @@ namespace Template.Application.Exceptions
 {
     public class BadRequestException : ApplicationException
     {
+        public BadRequestException(string message) : base(message)
+        {
+        }
+        
         public BadRequestException(string message, IDictionary<string, string[]> validationErrors) : base(message)
         {
             ValidationErrors = validationErrors;
@@ -14,6 +18,6 @@ namespace Template.Application.Exceptions
             ValidationErrors = validationResult.ToDictionary();
         }
 
-        public IDictionary<string , string[]> ValidationErrors { get; set; }
+        public IDictionary<string , string[]>? ValidationErrors { get; set; }
     }
 }
